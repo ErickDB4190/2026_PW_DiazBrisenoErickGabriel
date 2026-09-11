@@ -39,3 +39,21 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
+.tarjeta{
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.tarjeta h2{
+    margin-top: 0;
+    font-size: 1.1rem;
+
+}
+.tarjeta a{
+    color: #3b82f6;
+    text-decoration: none;
+}
+.tarjeta a:hover{
+    text-decoration: underline;
+}
