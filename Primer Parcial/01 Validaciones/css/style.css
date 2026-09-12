@@ -40,7 +40,7 @@ footer{
     gap: 1rem;
 }
 .tarjeta{
-    background-color: #74726f;
+    background-color: #dbd4cd;
     border: 1px solid #e5e7eb;
     border-radius: 0.5rem;
     padding: 1rem;
@@ -56,4 +56,8 @@ footer{
 }
 .tarjeta a:hover{
     text-decoration: underline;
+}
+
+.formulario-registro{
+    
 }
