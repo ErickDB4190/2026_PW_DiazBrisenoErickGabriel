@@ -59,5 +59,27 @@ footer{
 }
 
 .formulario-registro{
+    width: 1rem;
+}
+.formulario-registro button{
+    background-color:#3b82f6;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    padding: 1rem;
+
+}
+.formulario-registro button:hover{
+    text-decoration: underline;
+    background-color: aqua;
+}
+.formulario-registro input{
+    background-color: #dbd4cd;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding:  0.5rem;
     
+}
+.formulario-registro label{
+    font-size: 20px;
 }
