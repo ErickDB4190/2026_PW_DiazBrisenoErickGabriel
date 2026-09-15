@@ -83,3 +83,10 @@ footer{
 .formulario-registro label{
     font-size: 20px;
 }
+
+input:valid {
+    border-color: #00ff00;
+}
+input:invalid{
+    border: #fd0000;
+}
