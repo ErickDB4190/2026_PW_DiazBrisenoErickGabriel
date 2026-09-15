@@ -84,9 +84,10 @@ footer{
     font-size: 20px;
 }
 
-input:valid {
-    border-color: #00ff00;
+.formulario-registro input.invalido{
+    border: 2px solid #fd0000;
 }
-input:invalid{
-    border: #fd0000;
+
+.formulario-registro .Error{
+    color: #fd0000;
 }
