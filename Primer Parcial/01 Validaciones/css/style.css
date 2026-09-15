@@ -91,3 +91,8 @@ footer{
 .formulario-registro .Error{
     color: #fd0000;
 }
+.mensaje-exito{
+    color: green;
+    font-weight: bold;
+    margin-top: 1rem;
+}
