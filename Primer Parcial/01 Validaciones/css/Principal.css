@@ -1,6 +1,6 @@
 body{
     background-color: #4757eb;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 table{
     background-color: #4dcf6e;
@@ -18,14 +18,13 @@ table{
     font-size: 1.5rem;
 }
 
-table {
-    border-collapse: collapse; 
+table { 
     margin: auto; 
     border: 2px solid #333;
     font-size:1.5rem;
 }
 th, td {
-    border: 1px solid #B5B9F0;
+    border: 1px solid #323dd8;
     padding: 8px 12px;
     text-align: center;
 }

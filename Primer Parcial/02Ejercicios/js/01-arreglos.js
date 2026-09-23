@@ -1,3 +1,5 @@
+//comilla inversa modificador "`" ${} para variables internas
+// map es una copia de un arreglo para una busqueda masiva dento de una base de datos, se guarda en el cache(cookies), basicamente "mapea" la copia de el arreglo principal
 // 01-arreglos.js
 // Métodos de arreglo más usados en JS/Node — practícalos sobre esta lista
 // de talleres (misma forma que la API real de CECyT9). Completa cada TODO.
@@ -26,7 +28,17 @@ console.log(llenos.map((t)=> t.nombre))
 
 
 // TODO: find — encuentra el PRIMER taller impartido por 'Ing. María López'
+console.log("Aplicando la función Find en los talleres");
+const tallerdeMaria = talleres.find((t) => t.instructor === 'Ing. María López');
+console.log(tallerdeMaria);
 
 // TODO: reduce — calcula `totalInscritos`, la suma de inscritos de todos los talleres
+console.log("Aplicando la función Reduce en los talleres");
+const totalInscritos = talleres.reduce((total, t) => total + t.inscritos, 0);
+console.log(totalInscritos);
+
 
 // TODO: filter + map encadenados — nombres de los talleres que SÍ tienen cupo disponible
+console.log("Aplicando la función Filter + Map encadenados en los talleres");
+const talleresConCupo = talleres.filter((t) => t.inscritos < t.cupo).map((t) => t.nombre);
+console.log(talleresConCupo);
