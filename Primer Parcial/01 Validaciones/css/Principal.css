@@ -1,20 +1,20 @@
 body{
-    background-color: #4757eb;
+    background-color: #61ee8b;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 table{
-    background-color: #4dcf6e;
+    background-color: #daae52;
     margin:1rem;
 }
 .titulocontent{
     text-align: center;
 }
 .titulocontent h1{
-    color: #FFFFFF;
+    color: #000000;
     font-size: 3rem;
 }
 .titulocontent p{
-    color: #FFFFFF;
+    color: #000000;
     font-size: 1.5rem;
 }
 
@@ -30,8 +30,8 @@ th, td {
 }
 thead{
     background-color: #2E4540;
-    color:#B5B9F0
+    color:#ffffff
 }
 a{
-    color:#B5B9F0
+    color:#82d1ff
 }

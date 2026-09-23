@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Encabezado */
+  header{
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+  
+  
+  .ejercicio {
+    background-color: rgb(102, 196, 164);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border: 2px solid #7de422;
+    border-radius: 4px;
+  }
+  
+  
+  .tabla-scroll {
+    max-height: 300px; 
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+  }
+  
+ 
+  table {
+    width: 100%;
+    
+  }
+  
+  th, td {
+    border: 1px solid #e04c4c;
+    padding: 1rem;
+    text-align: left;
+    background-color: #a0aec0;
+  }
+  
+  th {
+    background-color: #719cd4;
+  }
+  
+  
+  .formulario {
+    display: flex; /*aca lo mismo que lo de abajo*/
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .campos {
+    display: flex; /*investigue y es como una forma para que se adapte a los cuadros o que se acomode LO DEL FLEX*/
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  select, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #a0aec0;
+  }
+  
+  button {
+    background-color: #319795;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2c7a7b;
+  }
+  
+ 
+  .resultado {
+    display: block;
+    margin-top: 15px;
+    padding: 1rem;
+    background-color: #a9d1fa;
+    
+    white-space: pre-line; /* en teoria esto hace que no se amontonen las palabras*/
+  }

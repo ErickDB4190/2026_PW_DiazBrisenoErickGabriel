@@ -1,12 +1,9 @@
-
-
 const talleres = [
     { nombre: 'Introducción a Python', instructor: 'Ing. María López', cupo: 25, inscritos: 25 },
     { nombre: 'Fundamentos de Redes', instructor: 'Ing. Carlos Ramírez', cupo: 30, inscritos: 18 },
     { nombre: 'Diseño de Bases de Datos', instructor: 'Ing. Ana Torres', cupo: 20, inscritos: 20 },
     { nombre: 'Desarrollo Web con JS', instructor: 'Ing. María López', cupo: 25, inscritos: 10 },
 ];
-
 
 function pintarTabla() {
     const tabla = document.getElementById('tabla-cuerpo');
@@ -31,7 +28,7 @@ const formularioArreglos = document.getElementById('form-arreglos');
 const resArreglos = document.getElementById('resultado-arreglo');
 const OperacionArreglo = document.getElementById('operacion-arreglo');
 
-formularioArreglos.addEventListener('submit', (evento) =>{
+formularioArreglos.addEventListener('submit', (evento) => {
     evento.preventDefault();
     const op = OperacionArreglo.value;
 
@@ -49,9 +46,12 @@ formularioArreglos.addEventListener('submit', (evento) =>{
             break;
         case 'find':
             const tallerMaria = talleres.find((t) => t.instructor === 'Ing. María López');
-            resultado = tallerMaria ? `${tallerMaria.nombre} (${tallerMaria.inscritos}/${tallerMaria.cupo})` : 'No existe ningún taller en el que se de clases por la Ing. María López';
+            resultado = tallerMaria ? `${tallerMaria.nombre} (${tallerMaria.inscritos}/${tallerMaria.cupo})` : 'No existe ningún taller en el que se dé clases por la Ing. María López';
             break;
     }
     resArreglos.textContent = resultado;
     pintarTabla();
 });
+
+// Cargar la tabla automáticamente al abrir la página
+pintarTabla();
