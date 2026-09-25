@@ -53,5 +53,46 @@ formularioArreglos.addEventListener('submit', (evento) => {
     pintarTabla();
 });
 
-// Cargar la tabla automáticamente al abrir la página
+// Carga la tabla automáticamente al abrir la página o algo asi segun lo que investigue XD
 pintarTabla();
+
+//segunda parte
+
+const formObjeto = document.getElementById('form-objeto');
+const resultadoObjeto = document.getElementById('resultado-objeto');
+
+formObjeto.addEventListener('submit', (evento) =>{
+
+    evento.preventDefault();
+
+    //construimos el objeto de talleres
+    const taller = {
+        nombre : document.getElementById('obj-nombre'),
+        instructor : document.getElementById('obj-instructor').value,
+        cupo : Number(document.getElementById('obj-cupo').value),
+        instructor : Number(document.getElementById('obj-instructor').value)
+    };
+
+    const operacion = document.getElementById('operacion-objeto').value;
+
+    let resultado;
+
+    switch(operacion){
+        case 'keys':
+            resultado = JSON.stringify(Object.keys(taller));
+            break;
+        case 'values':
+
+            break;
+        case 'entries':
+            resultado = Object.entries(taller).map(([campo,valor]) => `$(campo):$(valor)`).join('\n');
+            break;
+        case 'stringify':
+
+            break;
+        case 'roundtrip':
+            break;
+    }
+
+    resultadoObjeto.textContent = resultado;
+})
