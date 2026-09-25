@@ -30,4 +30,3 @@ console.log('Transformacion de JSON a objeto');
 const objetoDeVuelta = JSON.parse(textoJson);
 console.log(textoJson);
 console.log('tipo: ', typeof objetoDeVuelta);
-console.log(objetoDeVuelta.nombre);
