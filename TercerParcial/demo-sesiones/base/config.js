@@ -4,14 +4,17 @@ module.exports = {
   // Dónde guarda el servidor las sesiones:
   //  'mysql'   → en la tabla sessions de tu base de datos (sobreviven a un reinicio).
   //  'memoria' → en la memoria del servidor (se pierden al reiniciar).
-  almacen: 'mysql',
+  //almacen: 'mysql',
+    almacen: 'mysql',
 
   // Cuánto dura la sesión, en milisegundos. 10 minutos = 10 * 60 * 1000
-  maxAgeMs: 10 * 60 * 1000,
-
+  
+  maxAgeMs: 10 * 60 * 1000, 
+    // maxAgeMs: 20 * 1000,
   // true: cada petición reinicia el reloj de la expiración (la sesión vence por inactividad).
   // false: vence a la hora fija, aunque el usuario siga usando la página.
-  rolling: false,
+  
+   rolling: true,
 
   // true: el JavaScript de la página NO puede leer la cookie (document.cookie no la muestra).
   httpOnly: true,

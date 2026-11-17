@@ -160,9 +160,7 @@ app.get('/api/perfil', requiereSesion, (req, res) => {
 
 app.get('/api/admin/reporte', requiereSesion, requiereRol('admin'), (req, res) => {
   res.json({
-    mensaje: 'Acceso autorizado al reporte administrativo',
-    usuario: req.session.usuario.usuario,
-    rol: req.session.usuario.rol
+    reporte: 'Talleres: 3 · Inscritos: 57 · Cupo libre: 18'
   });
 });
 
